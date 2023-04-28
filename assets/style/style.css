@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(128, 128, 128, 0.539) ;
+}
+.logo{
+    width: 100px;
+}
+.nav-link{
+    color: #D90368;
+}
+
+/* CAROUSEL */
+main{
+    min-height: 80vh;
+}
+.carousel-item img{
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover;
+    object-position: center;
+}
+.container-carousel{
+    position: relative;
+}
+.container-carousel h2{
+    font-size: 50px;
+    background-color: rgba(119, 136, 153, 0.56);
+    border-radius: 15px;
+    
+}
+.logo-footer{
+    width: 25px;
+    height: 25px;
+    object-fit: cover
+}
+.image-category{
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
+table,
+tr,
+td,
+th{
+    
+    border: 2px solid black;
+    border-collapse: collapse;
+}

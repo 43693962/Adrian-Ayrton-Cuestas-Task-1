@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -33,6 +34,7 @@ main{
     
 }
 .logo-footer{
+    
     width: 25px;
     height: 25px;
     object-fit: cover
@@ -50,3 +52,16 @@ th{
     border: 2px solid black;
     border-collapse: collapse;
 }
+.card-img-top{
+    width: 19rem;
+    height: 11.875rem;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+

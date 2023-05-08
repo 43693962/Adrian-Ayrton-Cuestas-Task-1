@@ -1,6 +1,6 @@
-let sectionCard = document.getElementById("sectionCard")
+let sectionUpcoming = document.getElementById("sectionUpcoming")
 
-function cardsHome(events) {
+function cards(events) {
     return `<div class="card d-flex flex-column mb-3 justify-content-center align-items-center m-2" style="width: 30rem;">
             <img src=${events.image} class="card-img-top p-2" alt="Feria">
             <div class="card-body d-flex flex-column align-items-center">
@@ -13,9 +13,13 @@ function cardsHome(events) {
 function listaCard (lista, donde){
     let template = ``
     for (let elemento of lista) {
-        template += cardsHome (elemento)
-
+        template += cards (elemento)
     }
     donde.innerHTML = template
 }
-listaCard (data.events, sectionCard )
+    function filtro (eventos){
+        return eventos.date > data.currentDate
+}
+let eventosFiltrados = data.events.filter((filtro))
+
+listaCard ( eventosFiltrados , sectionUpcoming)
